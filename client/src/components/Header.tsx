@@ -2,7 +2,7 @@
 
 import { Link } from "react-router-dom";
 // import { useAppContext } from "../contexts/AppContext";
-import SignOutButton from "./SignOutButton.tsx";
+// import SignOutButton from "./SignOutButton.tsx";
 
 const Header = () => {
 //   const { isLoggedIn } = useAppContext();
@@ -28,7 +28,7 @@ const Header = () => {
               >
                 My Hotels
               </Link>
-              <SignOutButton />
+              {/* <SignOutButton /> */}
             </>
           ) : (
             <Link
