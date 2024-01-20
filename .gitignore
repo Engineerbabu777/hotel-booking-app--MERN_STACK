@@ -7,6 +7,14 @@
 /client/env
 /server/.env
 /server/env
+/server/.env.e2e
+/server/env.e2e
+/e2e-test/node_modules/
+/e2e-test/test-results/
+/e2e-test/playwright-report/
+/e2e-test/blob-report/
+/e2e-test/playwright/.cache/
+
 
 .client/env
 ./server/env
