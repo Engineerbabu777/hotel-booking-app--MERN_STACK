@@ -6,7 +6,7 @@ import userRoutes from './routes/users'
 import authRoutes from './routes/auth'
 import { v2 as cloudinary } from 'cloudinary'
 import cookieParser from 'cookie-parser'
-
+import path from 'path'
 // CREATING EXPRESS APP!!
 const app = express()
 dotenv.config() // FOR USING ***** !
@@ -31,6 +31,8 @@ app.use(
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
+
+app.use(express.static(path.join(__dirname, '../../client/build')))
 
 // ROUTES!!
 app.use('/api/auth', authRoutes)
