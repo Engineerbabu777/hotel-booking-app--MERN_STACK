@@ -14,7 +14,9 @@
 /e2e-test/playwright-report/
 /e2e-test/blob-report/
 /e2e-test/playwright/.cache/
-
+/server/.dist
+/server/dist
+/client/build
 
 .client/env
 ./server/env
