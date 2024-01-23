@@ -1,9 +1,9 @@
 import { FormProvider, useForm } from "react-hook-form";
-import DetailsSection from "./DetailsSection.tsx";
-import TypeSection from "./TypeSection.tsx";
-import FacilitiesSection from "./FacilitiesSection.tsx";
-import GuestsSection from "./GuestsSection.tsx";
-import ImagesSection from "./ImagesSection.tsx";
+import DetailsSection from "./DetailsSection";
+import TypeSection from "./TypeSection";
+import FacilitiesSection from "./FacilitiesSection";
+import GuestsSection from "./GuestsSection";
+import ImagesSection from "./ImagesSection";
 import { HotelType } from "../../../../server/src/shared/types";
 import { useEffect } from "react";
 

@@ -7,8 +7,8 @@ import {
 import Layout from "./layouts/Layout";
 import Register from "./pages/Register";
 import SignIn from "./pages/SignIn";
-// import AddHotel from "./pages/AddHotel";
-// import { useAppContext } from "./contexts/AppContext";
+import AddHotel from "./pages/AddHotel";
+import { useAppContext } from "./contexts/AppContext";
 // import MyHotels from "./pages/MyHotels";
 // import EditHotel from "./pages/EditHotel";
 // import Search from "./pages/Search";
@@ -18,7 +18,7 @@ import SignIn from "./pages/SignIn";
 // import Home from "./pages/Home";
 
 const App = () => {
-  // const { isLoggedIn } = useAppContext();
+  const { isLoggedIn } = useAppContext();
   return (
     <Router>
       <Routes>
@@ -63,7 +63,7 @@ const App = () => {
           }
         />
 
-        {false && (
+        {isLoggedIn && (
           <>
             {/* <Route
               path="/hotel/:hotelId/booking"
@@ -74,14 +74,14 @@ const App = () => {
               }
             /> */}
 
-            {/* <Route
+            <Route
               path="/add-hotel"
               element={
                 <Layout>
                   <AddHotel />
                 </Layout>
               }
-            /> */}
+            />
             {/* <Route
               path="/edit-hotel/:hotelId"
               element={
